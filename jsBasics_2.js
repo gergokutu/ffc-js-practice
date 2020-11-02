@@ -15,4 +15,10 @@ var myArray = [['string', 0], ['string2', 1]];
 {
   var myArray = [["John", 23], ["cat", 2]];
   myArray.push(["dog", 3]);
+  console.log('After push:', myArray);
+  var removedFromMyArray = myArray.pop();
+  console.log('Pop:', removedFromMyArray);
+  console.log('Shift:', myArray.shift());
+  myArray.unshift(["Paul",35]);
+  console.log('After unshift:', myArray);
 }
