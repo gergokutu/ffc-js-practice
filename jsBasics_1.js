@@ -109,4 +109,5 @@ var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
 {
   var lastName = "Lovelace";
   var lastNameLength = console.log('Length of the string:', lastName.length, 'characters.');
+  var firstLetterOfLastName = console.log('First letter:', lastName[0]);
 }
