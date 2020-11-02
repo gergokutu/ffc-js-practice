@@ -47,3 +47,5 @@ var myDecimal = 6.85;
   var product = 2.0 * 2.5;
   var quotient = 4.4 / 2.0;
 }
+
+var remainder = 11 % 3;
