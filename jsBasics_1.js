@@ -69,8 +69,20 @@ var remainder = 11 % 3;
   a *= 5;
   b *= 3;
   c *= 10;
+
   // Augmented division
   a /= 12;
   b /= 4;
   c /= 11;
+}
+
+var myFirstName = 'Gergo';
+var myLastName = 'Kovacs';
+// Escaping characters > \
+var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+{
+  var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+}
+{ 
+  var myStr = 'FirstLine\n\t\\SecondLine\nThirdLine'; 
 }
