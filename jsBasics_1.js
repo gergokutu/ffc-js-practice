@@ -49,3 +49,28 @@ var myDecimal = 6.85;
 }
 
 var remainder = 11 % 3;
+
+{
+  var a = 3;
+  var b = 17;
+  var c = 12;
+
+  // Compound assigment with augmented addition
+  a += 12;
+  b += 9;
+  c += 7;
+
+  // Augmented subtraction
+  a -= 6;
+  b -= 15;
+  c -= 1;
+
+  // Augmented multiplication
+  a *= 5;
+  b *= 3;
+  c *= 10;
+  // Augmented division
+  a /= 12;
+  b /= 4;
+  c /= 11;
+}
