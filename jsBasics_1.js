@@ -104,3 +104,9 @@ var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
   var myStr = "Learning to code is ";
   myStr += someAdjective;
 }
+
+// Check length of string
+{
+  var lastName = "Lovelace";
+  var lastNameLength = console.log('Length of the string:', lastName.length, 'characters.');
+}
