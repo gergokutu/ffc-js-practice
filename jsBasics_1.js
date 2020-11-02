@@ -83,6 +83,19 @@ var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
 {
   var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 }
-{ 
-  var myStr = 'FirstLine\n\t\\SecondLine\nThirdLine'; 
+{
+  var myStr = 'FirstLine\n\t\\SecondLine\nThirdLine';
+}
+
+// Concatenate strings
+{
+  var myStr = "This is the start. " + "This is the end.";
+}
+{
+  var myStr = 'This is the first sentence. ';
+  myStr += 'This is the second sentence.';
+}
+{
+  var myName = 'Gergo Kovacs';
+  var myStr = 'My name is ' + myName + ' and I am well!';
 }
