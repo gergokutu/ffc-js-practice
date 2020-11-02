@@ -40,3 +40,6 @@ myVar++;
 // myVar = myVar++; // 87
 // myVar = ++myVar; // 88
 console.log(myVar);
+myVar--; // 87
+
+var myDecimal = 6.85;
