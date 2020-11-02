@@ -32,3 +32,11 @@ var sum = 10 + 10;
 var difference = 45 - 33;
 var product = 8 * 10;
 var quotient = 66 / 33;
+
+var myVar = 87;
+// myVar = myVar + 1;
+// myVar += 1;
+myVar++;
+// myVar = myVar++; // 87
+// myVar = ++myVar; // 88
+console.log(myVar);
