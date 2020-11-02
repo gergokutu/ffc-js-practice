@@ -99,3 +99,8 @@ var myStr = "I am a \"double quoted\" string inside \"double quotes\".";
   var myName = 'Gergo Kovacs';
   var myStr = 'My name is ' + myName + ' and I am well!';
 }
+{
+  var someAdjective = 'exciting!';
+  var myStr = "Learning to code is ";
+  myStr += someAdjective;
+}
