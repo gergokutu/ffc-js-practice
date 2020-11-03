@@ -8,11 +8,10 @@ function functionWithArgs(num1, num2) {
 }
 functionWithArgs(6, 8);
 
-// Declare the myGlobal variable below this line
+// Global vs local
 var myGlobal = 10;
 
 function fun1() {
-  // Assign 5 to oopsGlobal Here
   oopsGlobal = 5;
 }
 
@@ -26,3 +25,14 @@ function fun2() {
   }
   console.log(output);
 }
+
+function myLocalScope() {
+  'use strict';
+
+  var myVar = 'hmm';
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+
+// myVar is not defined outside of myLocalScope
+console.log('outside myLocalScope', myVar);
