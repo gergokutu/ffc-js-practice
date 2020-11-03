@@ -49,3 +49,19 @@ function timesFive(num) {
   return num * 5;
 }
 var check = console.log('5 * 2 should be 10 >', timesFive(2));
+
+
+var sum = 0;
+
+// Without return statement > returned value is undefined by default
+function addThree() {
+  sum = sum + 3;
+}
+
+function addFive() {
+  sum = sum + 5;
+}
+
+addThree();
+addFive();
+console.log('Global sum modified:', sum);
