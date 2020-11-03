@@ -43,5 +43,9 @@ function myOutfit() {
   var outerWear = 'sweater';
   return outerWear;
 }
-
 myOutfit();
+
+function timesFive(num) {
+  return num * 5;
+}
+var check = console.log('5 * 2 should be 10 >', timesFive(2));
