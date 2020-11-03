@@ -35,4 +35,13 @@ function myLocalScope() {
 myLocalScope();
 
 // myVar is not defined outside of myLocalScope
-console.log('outside myLocalScope', myVar);
+console.log('outside myLocalScope >', typeof myVar);
+
+var outerWear = 'T-Shirt';
+
+function myOutfit() {
+  var outerWear = 'sweater';
+  return outerWear;
+}
+
+myOutfit();
