@@ -21,7 +21,7 @@ function testStrictNotEqual(val) {
   }
   return "Equal";
 }
-console.log("Test strict not equal", testStrictNotEqual(10));
+console.log("Should not be equal  >", testStrictNotEqual(10));
 
 function testGreaterThan(val) {
   if (val > 100) {
@@ -43,5 +43,14 @@ function testLogicalAnd(val) {
 
   return "No";
 }
-console.log(testLogicalAnd(10));
+console.log("Should be No:", testLogicalAnd(10));
+
+function testLogicalOr(val) {
+  if (val > 20 || val < 10) {
+    return "Outside";
+  }
+
+  return "Inside";
+}
+console.log("Should be Inside:", testLogicalOr(15));
 
