@@ -78,5 +78,13 @@ function testElseIf(val) {
 }
 console.log("Should be 'Between 5 and 10' >", testElseIf(7));
 
-// Next > Logical Order in If Else Statements
-
+function orderMyLogic(val) {
+  if (val < 5) {
+    return "Less than 5";
+  } else if (val < 10) {
+    return "Less than 10";
+  } else {
+    return "Greater than or equal to 10";
+  }
+}
+console.log("Should be 'Less than 10':", orderMyLogic(7));
