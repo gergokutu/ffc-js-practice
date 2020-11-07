@@ -54,3 +54,29 @@ function testLogicalOr(val) {
 }
 console.log("Should be Inside:", testLogicalOr(15));
 
+function testElse(val) {
+  var result = "";
+
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
+  }
+
+  return result;
+}
+console.log("Should be '5 or Smaller'", testElse(4));
+
+function testElseIf(val) {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
+  } else {
+    return "Between 5 and 10";
+  }
+}
+console.log("Should be 'Between 5 and 10' >", testElseIf(7));
+
+// Next > Logical Order in If Else Statements
+
