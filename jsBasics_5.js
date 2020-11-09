@@ -72,3 +72,13 @@ function isLess(a, b) {
   return a < b;
 }
 console.log("Should return: true >", isLess(10, 15));
+
+function abTest(a, b) {
+  return (a < 0 || b < 0) ?
+    undefined :
+    Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+
+  // if (a < 0 || b < 0) return undefined;
+  // return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+console.log("Should return: undefined >", abTest(2, -1));
