@@ -88,3 +88,18 @@ function orderMyLogic(val) {
   }
 }
 console.log("Should be 'Less than 10':", orderMyLogic(7));
+
+function testSize(num) {
+  if (num < 5) {
+    return "Tiny";
+  } else if (num < 10) {
+    return "Small";
+  } else if (num < 15) {
+    return "Medium";
+  } else if (num < 20) {
+    return "Large";
+  } else {
+    return "Huge";
+  }
+}
+console.log("Should return 'Small':", testSize(7));
