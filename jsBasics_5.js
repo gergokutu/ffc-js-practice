@@ -65,3 +65,10 @@ function sequentialSizes(val) {
   return answer;
 }
 console.log("Should return: Mid >", sequentialSizes(5));
+
+// Return true/false
+// Do not use if/else statements!!!
+function isLess(a, b) {
+  return a < b;
+}
+console.log("Should return: true >", isLess(10, 15));
