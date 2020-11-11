@@ -30,3 +30,18 @@ var testObj = {
 var playerNumber = 16;
 var player = testObj[playerNumber];
 
+var myDog = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+console.log("Name of my dog is:", myDog.name);
+myDog.name = "Happy Coder";
+console.log("Name of my dog is:", myDog.name);
+myDog["name"] = "Happier Coder";
+console.log("Name of my dog is:", myDog.name);
+var propName = "name";
+myDog[propName] = "The Happiest Coder";
+console.log("Name of my dog is:", myDog.name);
+
