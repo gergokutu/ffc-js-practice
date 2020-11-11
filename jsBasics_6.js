@@ -1,5 +1,5 @@
 var myDog = {
-  name: "Whiskers", // same like "name": "Whiskers",
+  name: "Whiskers", // Same like "name": "Whiskers",
   legs: 4,
   tails: 1,
   friends: ["Cheese", "Me"]
@@ -48,4 +48,8 @@ console.log("Name of my dog is:", myDog.name);
 // Add new prop
 myDog["bark"] = "woof";
 console.log("myDog object with new prop:", myDog);
+
+// Delete tails
+delete myDog.tails;
+console.log("myDog object after deleting tails prop:", myDog);
 
