@@ -45,3 +45,7 @@ var propName = "name";
 myDog[propName] = "The Happiest Coder";
 console.log("Name of my dog is:", myDog.name);
 
+// Add new prop
+myDog["bark"] = "woof";
+console.log("myDog object with new prop:", myDog);
+
