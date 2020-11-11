@@ -30,6 +30,7 @@ var contacts = [
 function lookUpProfile(name, prop) {
   for (var i = 0; i < contacts.length; i++) {
     if (name === contacts[i].firstName) {
+      // with hasOwnProperty
       return contacts[i].hasOwnProperty(prop) ?
         contacts[i][prop] :
         "No such property";
@@ -37,5 +38,17 @@ function lookUpProfile(name, prop) {
   }
   return "No such contact";
 }
-
 console.log("Test:", lookUpProfile("Kristian", "lastName"));
+
+function lookUpProfile2(name, prop) {
+  for (var i = 0; i < contacts.length; i++) {
+    if (name === contacts[i].firstName) {
+      // With prop in Obj
+      return prop in contacts[i] ?
+        contacts[i][prop] :
+        "No such property";
+    }
+  }
+  return "No such contact";
+}
+console.log("Test2:", lookUpProfile2("Kristian", "lastName"));
