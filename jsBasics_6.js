@@ -62,10 +62,18 @@ function phoneticLookup(val) {
     "delta": "Denver",
     "echo": "Easy",
     "foxtrot": "Frank"
-  }
+  };
 
   result = lookup[val];
   return result;
 }
-
 console.log("charlie should return: Chicago > ", phoneticLookup("charlie"));
+
+function checkObj(obj, checkProp) {
+  return obj.hasOwnProperty(checkProp) ?
+    obj[checkProp] :
+    "Not Found";
+}
+var testObject = { testProp: "testValue" };
+var propToCheck = "name";
+console.log("Should return: Not found > ", checkObj(testObj, propToCheck));
