@@ -37,3 +37,14 @@ function multiplyAll(arr) {
 
 console.log("Should return: 5040 >", multiplyAll([[1, 2], [3, 4], [5, 6, 7]]));
 var testArr = [[1, 2], [3, 4], [5, 6]];
+
+// Setup
+var theArr = [];
+var i = 10;
+
+// Only change code below this line
+do {
+  theArr.push(i);
+  i++;
+} while (i < 10);
+console.log("Should be [ 10 ] > ", theArr);
