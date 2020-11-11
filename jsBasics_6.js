@@ -77,3 +77,16 @@ function checkObj(obj, checkProp) {
 var testObject = { testProp: "testValue" };
 var propToCheck = "name";
 console.log("Should return: Not found > ", checkObj(testObj, propToCheck));
+
+var myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+    },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+var gloveBoxContents = myStorage.car.inside["glove box"];
